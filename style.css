@@ -8,27 +8,26 @@
 }
 
 body{
-    height: 100vh;
-    min-width: fit-content;
     background-color: #24252A;
     background-image: url("https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed ;
     background-position: center;
-}
-
-.navbar{
-    width: 100%;
-    max-width: 1200px;
-    height: 60px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 header{
     padding: 2rem;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar{
+    width: 100%;
+    max-width: 1200px;
+    height: 60px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -55,6 +54,7 @@ header{
 
 .dropdown_menu{
     position: absolute;
+    z-index: 1;
     width: unset;
     right: 2rem;
     top: 80px;
@@ -66,7 +66,6 @@ header{
     transition: height .2s ease;
     overflow: hidden;
 }
-
 
 .dropdown_menu li{
     display: flex;
@@ -103,7 +102,46 @@ header{
     color: #fff;
 }
 
-
 .dropdown_menu.open{
     height: 240px;
+}
+
+/* Main */
+
+main{
+    max-width: 1200px;
+    color: #fff;
+    font-size: .8rem;
+    padding: .5rem;
+}
+
+
+.card{
+    background:rgba(255, 255, 255, .1);
+    backdrop-filter: blur(15px);
+    color: #000;
+    padding: 1rem;
+    border-radius: 25px;
+    width: 80vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    scroll-behavior: smooth;
+}
+
+.card h1, h2{
+    padding: 1rem;
+    font-size: 5vw;
+}
+
+.card p {
+    padding: 1rem;
+    font-size: 2vw;
+}
+
+.card-image img{
+    position: relative;
+    object-fit: cover;
+    padding: 1rem;
+    width: 80%;
 }
