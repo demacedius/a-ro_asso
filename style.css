@@ -130,7 +130,7 @@ main{
 .card{
     background:rgba(255, 255, 255, .1);
     backdrop-filter: blur(15px);
-    color: #000;
+    color: #ffffff;
     padding: 1rem;
     border-radius: 25px;
     position: relative;
@@ -179,6 +179,7 @@ footer{
     justify-content: center;
     top: calc(100% - 60px);
     position: absolute;
+    color:#fff
 }
 .history-fix {
     position: relative;
