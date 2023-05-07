@@ -125,7 +125,6 @@ main{
     justify-content: center;
     flex-direction: column;
     gap: 20px;
-   
 }
 
 .card{
@@ -178,10 +177,13 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 100%;
+    top: calc(100% - 60px);
     position: absolute;
 }
-
+.history-fix {
+    position: relative;
+    margin-top: 2rem;
+}
 @media (width>386px ){
     .card{
         max-width: 80%;
