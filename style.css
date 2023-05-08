@@ -20,6 +20,7 @@ body{
     background-repeat: no-repeat;
     background-attachment:fixed ;
     background-position: center;
+    
 }
 
 header{
@@ -170,6 +171,39 @@ main{
     height:auto;
 }
 
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+.event-card{
+    background:rgba(255, 255, 255, .1);
+    backdrop-filter: blur(15px);
+    color: #000;
+    padding: 1rem;
+    border-radius: 25px;
+    position: relative;
+    left: 50%;
+    margin-right: auto;
+    transform: translateX(-50%);
+    scroll-behavior: smooth; 
+}
+
+.event-card:nth-child(2n){
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.event-card h2 {
+    text-align: center;
+}
+
+
+
+
 footer{
     background-color: rgba(255, 255, 255, .1);
     backdrop-filter: blur(25px);
@@ -178,9 +212,14 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 100%;
-    position: absolute;
+    /*top: calc(100% - 60px);*/
+    top: 100vh;
+    margin-top: 2rem;
+    position: relative;
 }
+
+
+
 
 @media (width>386px ){
     .card{
@@ -227,4 +266,6 @@ footer{
     .card h1, h2{
         font-size: calc(var(--title-font-size) * 0.5rem);
     }
+
 }
+
