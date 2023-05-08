@@ -175,7 +175,10 @@ main{
     display: flex;
     flex-direction: column;
     gap: 10rem;
+    padding-top: 5rem;
 }
+
+
 
 .event-card{
     background:rgba(255, 255, 255, .1);
