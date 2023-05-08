@@ -212,8 +212,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    /*top: calc(100% - 60px);*/
-    top: 100vh;
+    top: calc(100% - 60px);
     margin-top: 2rem;
     position: relative;
 }
